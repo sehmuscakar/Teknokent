@@ -1,0 +1,30 @@
+﻿@model Teknokent2.Models.Teacher
+
+@{
+    ViewData["Title"] = "Delete";
+}
+<h3>Silmek istediğize emin misiniz?</h3>
+<div>
+    <h4>Silme Paneli</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.No)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.No)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> 
+        <a asp-action="Index">listeye geri dön</a>
+    </form>
+</div>

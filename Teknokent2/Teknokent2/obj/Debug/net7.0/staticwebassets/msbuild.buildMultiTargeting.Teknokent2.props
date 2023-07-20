@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Teknokent2.props" />
+</Project>
